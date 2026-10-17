@@ -6,14 +6,12 @@ export function BuiltBy({ className = "" }: { className?: string }) {
     <p className={`text-center text-xs ${className}`}>
       Made with <span aria-hidden>💌</span>
       <span className="sr-only">love</span> by{" "}
-      <a
-        href="https://prajwalnh.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/#story"
         className="font-bold underline underline-offset-4"
       >
         Prajwal
-      </a>
+      </Link>
     </p>
   );
 }

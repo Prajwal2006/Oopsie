@@ -19,7 +19,7 @@ export const MEETING_LABELS: Record<MeetingFormat, { label: string; emoji: strin
   call: { label: "Phone call", emoji: "📞" },
   video: { label: "Video call", emoji: "💻" },
   coffee: { label: "Coffee", emoji: "☕" },
-  walk: { label: "A walk", emoji: "🚶" },
+  walk: { label: "In person", emoji: "🚶" },
   text: { label: "Text chat", emoji: "💬" },
 };
 
