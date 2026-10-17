@@ -1,4 +1,4 @@
-// "Oops", the Oopsie mascot: a soft peach blob with a sheepish face.
+// "Oops", the Oopsie Woopsie mascot: a soft peach blob with a sheepish face.
 
 type Mood = "sheepish" | "happy" | "calm";
 
@@ -6,7 +6,7 @@ export function Mascot({
   size = 120,
   mood = "sheepish",
   className = "",
-  title = "Oops, the Oopsie mascot",
+  title = "Oops, the Oopsie Woopsie mascot",
   decorative = false,
   still = false,
 }: {
@@ -81,7 +81,7 @@ export function Wordmark({ className = "", small = false }: { className?: string
       style={{ fontFamily: "var(--nf-display)", fontSize: small ? "0.95rem" : "1.35rem" }}
     >
       <Mascot size={small ? 20 : 30} decorative still />
-      Oopsie
+      Oopsie Woopsie
     </span>
   );
 }

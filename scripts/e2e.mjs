@@ -1,4 +1,4 @@
-// End-to-end test against a running Oopsie server and the real Neon database.
+// End-to-end test against a running Oopsie Woopsie server and the real Neon database.
 //   npm run build && npm start   (in another terminal)
 //   npm run test:e2e             (BASE_URL defaults to http://localhost:3000)
 import { createHash } from "node:crypto";
@@ -71,7 +71,7 @@ const payload = {
   availability: { days: [{ date: tomorrow, windows: [{ start: "10:00", end: "12:00" }] }], slotMinutes: 30 },
 };
 
-console.log(`\n== Oopsie E2E against ${BASE} ==\n`);
+console.log(`\n== Oopsie Woopsie E2E against ${BASE} ==\n`);
 
 // 0. Server-side validation
 const bad = await api("POST", "/api/apologies", { ...payload, message: "x".repeat(601) });
@@ -95,7 +95,7 @@ const html = await page.text();
 const ogTitle = /<meta property="og:title" content="([^"]+)"/.exec(html)?.[1];
 const metaTags = (html.match(/<meta [^>]*>/g) || []).join("\n");
 check("public page -> 200", page.status === 200, `${page.status}`);
-check("dynamic og:title", ogTitle === "Oopsie! Alex has something to say", ogTitle);
+check("dynamic og:title", ogTitle === "Oopsie Woopsie! Alex has something to say", ogTitle);
 check("meta tags never contain the message", !metaTags.includes("dumpling"));
 
 // 3. Recipient events: open, dodge the No button 6 times, say yes

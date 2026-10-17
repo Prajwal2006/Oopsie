@@ -81,9 +81,9 @@ export function ManageClient({ token, initial }: { token: string; initial: Manag
         <h1 className="mt-3 text-2xl font-semibold" style={{ fontFamily: "var(--nf-display)" }}>
           All gone
         </h1>
-        <p className="mt-1 text-muted">This Oopsie and all its data have been permanently deleted.</p>
+        <p className="mt-1 text-muted">This Oopsie Woopsie and all its data have been permanently deleted.</p>
         <Link href="/" className="btn-primary mt-6">
-          Back to Oopsie
+          Back to Oopsie Woopsie
         </Link>
       </main>
     );
@@ -104,7 +104,7 @@ export function ManageClient({ token, initial }: { token: string; initial: Manag
   return (
     <div className="flex min-h-dvh flex-col">
       <header className="mx-auto flex w-full max-w-md items-center justify-between px-4 pt-[calc(1rem+var(--safe-top))]">
-        <Link href="/" aria-label="Oopsie home" className="rounded-lg">
+        <Link href="/" aria-label="Oopsie Woopsie home" className="rounded-lg">
           <Wordmark small />
         </Link>
         <span className="text-xs font-bold text-muted">Private · don&apos;t share</span>
@@ -115,7 +115,7 @@ export function ManageClient({ token, initial }: { token: string; initial: Manag
           <Mascot size={72} mood={view.status === "booked" ? "happy" : view.status === "needs_space" ? "calm" : "sheepish"} />
           <div>
             <h1 className="text-2xl font-semibold" style={{ fontFamily: "var(--nf-display)" }}>
-              Your Oopsie for {view.recipientName}
+              Your Oopsie Woopsie for {view.recipientName}
             </h1>
             <p className="text-muted">
               {theme.emoji} {theme.label} · {statusLine}
@@ -254,7 +254,7 @@ export function ManageClient({ token, initial }: { token: string; initial: Manag
 
         <section aria-labelledby="danger" className="rounded-3xl border-2 border-[#f5c2c2] bg-[#fff5f5] p-4">
           <h2 id="danger" className="font-bold text-[#7a1010]">
-            Delete this Oopsie
+            Delete this Oopsie Woopsie
           </h2>
           <p className="text-sm text-[#7a1010]">Permanently removes the message, times, booking and stats. This can&apos;t be undone.</p>
           {confirmDelete ? (

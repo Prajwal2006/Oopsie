@@ -9,10 +9,10 @@ export default function NotFound() {
         This note has floated away
       </h1>
       <p className="mt-2 max-w-sm text-muted">
-        The link may have expired (Oopsies last 30 days) or been removed by its sender.
+        The link may have expired (Oopsie Woopsies last 30 days) or been removed by its sender.
       </p>
       <Link href="/" className="btn-primary mt-6">
-        Visit Oopsie
+        Visit Oopsie Woopsie
       </Link>
     </main>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import { DeveloperStory } from "@/components/DeveloperStory";
 import { Mascot, Wordmark } from "@/components/Mascot";
 
 const steps = [
@@ -17,13 +18,13 @@ export default function Home() {
 
       <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center px-4 pt-8 text-center">
         <Mascot size={156} />
-        <h1 className="mt-4 text-5xl font-semibold tracking-tight" style={{ fontFamily: "var(--nf-display)" }}>
-          Oopsie
+        <h1 className="mt-4 text-4xl font-semibold tracking-tight" style={{ fontFamily: "var(--nf-display)" }}>
+          Oopsie Woopsie
         </h1>
         <p className="mt-2 text-xl text-muted">Say sorry, cutely.</p>
 
         <Link href="/create" className="btn-primary mt-8 w-full max-w-xs text-lg">
-          Make an Oopsie <span aria-hidden>💌</span>
+          Make an Oopsie Woopsie <span aria-hidden>💌</span>
         </Link>
 
         <section aria-labelledby="how" className="mt-12 w-full text-left">
@@ -50,6 +51,8 @@ export default function Home() {
             ))}
           </ol>
         </section>
+
+        <DeveloperStory />
       </main>
 
       <Footer />

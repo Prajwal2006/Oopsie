@@ -1,4 +1,4 @@
--- Oopsie initial schema
+-- Oopsie Woopsie initial schema
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TABLE apologies (

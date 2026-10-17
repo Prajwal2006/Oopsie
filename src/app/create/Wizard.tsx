@@ -169,7 +169,7 @@ export function Wizard() {
   return (
     <div className="flex min-h-dvh flex-col bg-[radial-gradient(ellipse_at_top,#ffe0d3_0%,#fff7f1_60%)]">
       <header className="mx-auto flex w-full max-w-md items-center justify-between px-4 pt-[calc(1rem+var(--safe-top))]">
-        <Link href="/" aria-label="Oopsie home" className="rounded-lg">
+        <Link href="/" aria-label="Oopsie Woopsie home" className="rounded-lg">
           <Wordmark small />
         </Link>
         <p className="text-sm font-bold text-muted">
@@ -461,7 +461,7 @@ export function Wizard() {
             </button>
           ) : (
             <button type="button" className="btn-primary flex-1" disabled={publishing} onClick={publish}>
-              {publishing ? "Publishing…" : "Publish my Oopsie 💌"}
+              {publishing ? "Publishing…" : "Publish my Oopsie Woopsie 💌"}
             </button>
           )}
         </div>
@@ -582,7 +582,7 @@ function Published({ result, recipient }: { result: { slug: string; token: strin
           <Mascot size={120} mood="happy" />
         </div>
         <h1 className="mt-3 text-center text-3xl font-semibold" style={{ fontFamily: "var(--nf-display)" }}>
-          Your Oopsie is ready!
+          Your Oopsie Woopsie is ready!
         </h1>
         <p className="mt-1 text-center text-muted">Send the share link to {recipient || "them"}. Fingers crossed 🤞</p>
 
@@ -592,7 +592,7 @@ function Published({ result, recipient }: { result: { slug: string; token: strin
             <button
               type="button"
               className="btn-primary w-full"
-              onClick={() => navigator.share({ title: "Oopsie 💌", text: "I made you something", url: shareUrl }).catch(() => {})}
+              onClick={() => navigator.share({ title: "Oopsie Woopsie 💌", text: "I made you something", url: shareUrl }).catch(() => {})}
             >
               Share… <span aria-hidden>📤</span>
             </button>
@@ -604,7 +604,7 @@ function Published({ result, recipient }: { result: { slug: string; token: strin
             <span aria-hidden>⚠️ </span>Save your private manage link now
           </p>
           <p className="mt-1 text-sm text-[#6b4a00]">
-            It&apos;s the only way to see their answer, edit times, or delete this Oopsie. We can&apos;t recover it, and
+            It&apos;s the only way to see their answer, edit times, or delete this Oopsie Woopsie. We can&apos;t recover it, and
             you shouldn&apos;t share it with anyone.
           </p>
           <div className="mt-3">

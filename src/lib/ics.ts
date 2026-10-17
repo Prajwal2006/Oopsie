@@ -24,7 +24,7 @@ export function buildIcs(opts: { uid: string; startsAt: string; endsAt: string; 
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Oopsie//Say sorry, cutely//EN",
+    "PRODID:-//Oopsie Woopsie//Say sorry, cutely//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",

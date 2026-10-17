@@ -9,7 +9,7 @@ import { ManageClient } from "./ManageClient";
 type Props = { params: Promise<{ token: string }> };
 
 export const metadata: Metadata = {
-  title: "Manage your Oopsie",
+  title: "Manage your Oopsie Woopsie",
   robots: { index: false, follow: false },
   referrer: "no-referrer",
 };
@@ -28,7 +28,7 @@ export default function Page({ params }: Props) {
       fallback={
         <div className="flex min-h-dvh flex-col items-center justify-center gap-3" role="status">
           <Mascot size={96} />
-          <p className="font-bold text-muted">Checking on your Oopsie…</p>
+          <p className="font-bold text-muted">Checking on your Oopsie Woopsie…</p>
         </div>
       }
     >

@@ -30,7 +30,7 @@ export function ogImage(subtitle = "Say sorry, cutely.") {
           <path d="M50 71q5-4 10 0t10 0" stroke="#3d2518" strokeWidth="3.5" strokeLinecap="round" fill="none" />
           <path d="M95 32c3 5 5 8 5 11a5 5 0 0 1-10 0c0-3 2-6 5-11z" fill="#8fd3ff" />
         </svg>
-        <div style={{ fontSize: 110, fontWeight: 800, marginTop: 10 }}>Oopsie</div>
+        <div style={{ fontSize: 110, fontWeight: 800, marginTop: 10 }}>Oopsie Woopsie</div>
         <div style={{ fontSize: 44, marginTop: 4 }}>{subtitle}</div>
       </div>
     ),

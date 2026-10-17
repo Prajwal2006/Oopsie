@@ -15,12 +15,12 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? (vercelHost ? `https://${ver
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Oopsie | Say sorry, cutely", template: "%s | Oopsie" },
-  description: "Oopsie helps you say sorry, cutely. Write a sweet apology, send a link, and pick a time to talk.",
-  applicationName: "Oopsie",
+  title: { default: "Oopsie Woopsie | Say sorry, cutely", template: "%s | Oopsie Woopsie" },
+  description: "Oopsie Woopsie helps you say sorry, cutely. Write a sweet apology, send a link, and pick a time to talk.",
+  applicationName: "Oopsie Woopsie",
   openGraph: {
-    siteName: "Oopsie",
-    title: "Oopsie | Say sorry, cutely",
+    siteName: "Oopsie Woopsie",
+    title: "Oopsie Woopsie | Say sorry, cutely",
     description: "Write a sweet apology, send a link, and pick a time to talk.",
     type: "website",
   },

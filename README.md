@@ -1,6 +1,6 @@
-# Oopsie
+# Oopsie Woopsie
 
-**Say sorry, cutely.** Oopsie is a cute, customizable apology website. Pick a relationship vibe, write your message, and send a private link. If they're ready to talk, they tap "Yes" (the "No" button is famously shy) and pick a time from your availability.
+**Say sorry, cutely.** Oopsie Woopsie is a cute, customizable apology website. Pick a relationship vibe, write your message, and send a private link. If they're ready to talk, they tap "Yes" (the "No" button is famously shy) and pick a time from your availability.
 
 No accounts: the creator gets a private manage link with a secret token. Only a SHA-256 hash of that token is stored.
 
@@ -48,6 +48,8 @@ src/lib/themes.ts             vibes, colors, captions, starter templates
 src/lib/rate-limit.ts         Postgres fixed-window rate limiting (hashed IPs)
 src/components/DodgeButton.tsx the shy "No" button
 src/components/ApologyCard.tsx themed card shared by the live page and the wizard preview
+src/components/DeveloperStory.tsx  "story behind it" section on the landing page
+public/prajwal-nh.jpg         developer photo
 src/app/create                creator wizard
 src/app/a/[slug]              recipient experience (+ OG metadata)
 src/app/manage/[token]        status timeline, availability edits, delete

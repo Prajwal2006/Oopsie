@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const apology = SLUG_RE.test(slug) ? await getPublicApology(slug) : null;
   // Never reveal the message itself in link previews.
-  const title = apology ? `Oopsie! ${apology.senderName} has something to say` : "Oopsie | Say sorry, cutely";
+  const title = apology ? `Oopsie Woopsie! ${apology.senderName} has something to say` : "Oopsie Woopsie | Say sorry, cutely";
   return {
     title: { absolute: title },
     description,
     robots: { index: false, follow: false },
-    openGraph: { title, description, siteName: "Oopsie", type: "website" },
+    openGraph: { title, description, siteName: "Oopsie Woopsie", type: "website" },
     twitter: { card: "summary_large_image", title, description },
   };
 }

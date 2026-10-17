@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Wizard } from "./Wizard";
 
 export const metadata: Metadata = {
-  title: "Make an Oopsie",
+  title: "Make an Oopsie Woopsie",
   description: "Write a cute apology, add your availability, and get a link to send.",
 };
 

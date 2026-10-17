@@ -182,7 +182,7 @@ export function RecipientExperience({ apology }: { apology: PublicApology }) {
                           startsAt: confirmed.startsAt,
                           endsAt: confirmed.endsAt,
                           title: `Chat with ${apology.senderName} 💌`,
-                          description: `${MEETING_LABELS[apology.meetingFormat].label}, booked with Oopsie.`,
+                          description: `${MEETING_LABELS[apology.meetingFormat].label}, booked with Oopsie Woopsie.`,
                           location: apology.meetingDetails ?? undefined,
                         }),
                       )
@@ -362,7 +362,7 @@ function DetailsForm({
       if (data.error === "slot_taken") return onTaken(data.message);
       setErr(data.message ?? "Something went wrong. Please try again.");
     } catch {
-      setErr("Couldn't reach Oopsie. Check your connection and try again.");
+      setErr("Couldn't reach Oopsie Woopsie. Check your connection and try again.");
     } finally {
       setBusy(false);
     }
