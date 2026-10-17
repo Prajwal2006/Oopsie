@@ -95,7 +95,7 @@ export function RecipientExperience({ apology }: { apology: PublicApology }) {
 
       {stage !== "card" && (
         <motion.div key="after" initial={reduceMotion ? false : { opacity: 0 }} animate={{ opacity: 1 }}>
-          <ThemeShell vibe={apology.vibe} theme={apology.theme}>
+          <ThemeShell vibe={apology.vibe} theme={apology.theme} showAttribution>
             <main className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center py-6">
               {stage === "celebrate" && (
                 <Panel surface={s.surface}>

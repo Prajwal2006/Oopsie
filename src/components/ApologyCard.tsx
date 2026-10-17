@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode, type Ref } from "react";
 import { BackgroundFx } from "./BackgroundFx";
 import { DodgeButton } from "./DodgeButton";
+import { BuiltBy } from "./Footer";
 import { Wordmark } from "./Mascot";
 import { FONT_VARS, readableOn, stickersFor, THEMES, type ThemeConfig, type Vibe } from "@/lib/themes";
 
@@ -38,12 +39,14 @@ export function ThemeShell({
   theme,
   children,
   preview = false,
+  showAttribution = false,
   shellRef,
 }: {
   vibe: Vibe;
   theme: ThemeConfig;
   children: ReactNode;
   preview?: boolean;
+  showAttribution?: boolean;
   shellRef?: Ref<HTMLDivElement>;
 }) {
   const s = themeStyle(vibe, theme);
@@ -61,6 +64,7 @@ export function ThemeShell({
           <Wordmark small />
         </div>
         {children}
+        {showAttribution && <BuiltBy className="mt-4 opacity-70" />}
       </div>
     </div>
   );
@@ -125,7 +129,13 @@ export function ApologyCard({
   const yesScale = Math.min(1.5, 1 + dodges * 0.06);
 
   return (
-    <ThemeShell vibe={vibe} theme={theme} preview={mode === "preview"} shellRef={shellRef}>
+    <ThemeShell
+      vibe={vibe}
+      theme={theme}
+      preview={mode === "preview"}
+      showAttribution={mode === "live"}
+      shellRef={shellRef}
+    >
       <div className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center py-4">
         <div aria-hidden className="mb-2 flex justify-center gap-3 text-3xl">
           {stickers.map((st, i) => (
